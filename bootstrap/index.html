@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio | Desenvolvedor & Analista</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- CSS Customizado -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Portfólio.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre Mim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <!-- Botão de Tema Claro/Escuro -->
+                        <button id="theme-toggle" class="btn btn-theme-toggle rounded-pill shadow-sm">
+                            <i class="bi bi-moon-fill" id="theme-icon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center py-5">
+        <div class="container py-5">
+            <img src="https://ui-avatars.com/api/?name=S+N&background=d4a373&color=fff&size=150" alt="Sua Foto" class="rounded-circle profile-img mb-4 shadow">
+            <h1 class="display-4 fw-bold">Olá, eu sou [Seu Nome]</h1>
+            <p class="lead mb-4">Estudante de Tecnologia, entusiasta de Engenharia de Software e Gestão de TI.</p>
+            <a href="#projetos" class="btn btn-custom-primary rounded-pill px-4 py-2 me-2">Ver Projetos</a>
+            <a href="#contato" class="btn btn-outline-custom rounded-pill px-4 py-2">Contato</a>
+        </div>
+    </section>
+
+    <!-- Sobre Mim -->
+    <section id="sobre" class="py-5 bg-section-alt">
+        <div class="container py-4">
+            <h2 class="text-center fw-bold mb-5">Sobre Mim</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div class="p-4 custom-card rounded-4 shadow-sm text-center">
+                        <i class="bi bi-person-workspace display-1 text-accent"></i>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <p class="fs-5 text-justify">
+                        Sou estudante da área de tecnologia, focado em disciplinas como Engenharia de Software, Sistemas Gerenciadores de Bancos de Dados e Gestão de TI. 
+                    </p>
+                    <p class="fs-5 text-justify">
+                        Profissionalmente, atuo na área técnica prestando suporte em auditoria de sistemas e conciliação financeira de adquirentes de pagamento. Gosto de resolver problemas complexos e garantir que as liquidações e dados estejam sempre precisos. Também tenho grande interesse em evolução na área de Produto (PO) e mercado financeiro.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projetos" class="py-5">
+        <div class="container py-4">
+            <h2 class="text-center fw-bold mb-5">Meus Projetos</h2>
+            <div class="row g-4">
+                <!-- Projeto 1 -->
+                <div class="col-md-6">
+                    <div class="card h-100 custom-card rounded-4 border-0 shadow-sm p-3">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-accent">App de Finanças Pessoais</h5>
+                            <p class="card-text mt-3">Sistema focado no gerenciamento de finanças, criado para auxiliar no controle de gastos, receitas e metas orçamentárias.</p>
+                            <span class="badge bg-pastel-earth me-1">Engenharia de Software</span>
+                            <span class="badge bg-pastel-earth">Desenvolvimento</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Projeto 2 -->
+                <div class="col-md-6">
+                    <div class="card h-100 custom-card rounded-4 border-0 shadow-sm p-3">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-accent">Sistema para Agência de Viagens</h5>
+                            <p class="card-text mt-3">Plataforma desenvolvida seguindo os padrões do SWEBOK para gerenciar excursões de ônibus, reservas e roteiros de viagens.</p>
+                            <span class="badge bg-pastel-earth me-1">SWEBOK</span>
+                            <span class="badge bg-pastel-earth">Arquitetura</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contato -->
+    <footer id="contato" class="py-4 text-center mt-5">
+        <div class="container">
+            <h4 class="fw-bold mb-3">Vamos conversar?</h4>
+            <div class="d-flex justify-content-center gap-3 mb-3">
+                <a href="#" class="social-icon"><i class="bi bi-linkedin fs-3"></i></a>
+                <a href="#" class="social-icon"><i class="bi bi-github fs-3"></i></a>
+                <a href="#" class="social-icon"><i class="bi bi-envelope fs-3"></i></a>
+            </div>
+            <p class="mb-0 small opacity-75">© 2026 Desenvolvido para a disciplina GAC116 - Programação Web.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Script Customizado -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
