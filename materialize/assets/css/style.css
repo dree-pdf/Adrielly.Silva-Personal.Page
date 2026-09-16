@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+
+:root {
+    /* Tema Claro - Tons Terrosos e Pastéis */
+    --bg-main: #FAF7F2;
+    --bg-alt: #F1EBE1;
+    --text-main: #4A3F35;
+    --text-muted: #7A6F65;
+    --accent-color: #D4A373;
+    --accent-hover: #b88656;
+    --card-bg: #FFFFFF;
+    --pastel-badge: #E9EDC9;
+}
+
+body.dark-theme {
+    /* Tema Escuro - Tons Terrosos e Pastéis */
+    --bg-main: #2D2824;
+    --bg-alt: #38322D;
+    --text-main: #FDFBF7;
+    --text-muted: #D1C7BD;
+    --accent-color: #D4A373;
+    --accent-hover: #E3B992;
+    --card-bg: #3E3731;
+    --pastel-badge: #5A5348;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Tipografia e Cores */
+.text-main { color: var(--text-main) !important; }
+.text-muted { color: var(--text-muted) !important; }
+.text-accent { color: var(--accent-color) !important; }
+.fw-bold { font-weight: 700; }
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 1.5rem; }
+.mb-4 { margin-bottom: 2rem; }
+.rounded-4 { border-radius: 1rem !important; }
+.text-justify { text-align: justify; }
+
+/* Navbar e Sidenav */
+.custom-navbar {
+    background-color: var(--bg-main);
+    transition: background-color 0.3s ease;
+}
+.custom-sidenav {
+    background-color: var(--bg-main);
+}
+
+/* Seções */
+.hero-section {
+    padding: 6rem 0;
+}
+.bg-section-alt {
+    background-color: var(--bg-alt);
+    padding: 4rem 0;
+}
+.section-title {
+    margin-bottom: 3rem;
+}
+
+/* Cards */
+.custom-card {
+    background-color: var(--card-bg) !important;
+    transition: transform 0.3s ease;
+}
+.custom-card:hover {
+    transform: translateY(-5px);
+}
+.card-action.border-0 {
+    border-top: none !important;
+}
+
+/* Botões e Badges (Chips) */
+.btn-custom-primary {
+    background-color: var(--accent-color) !important;
+    border-radius: 30px;
+    font-weight: bold;
+    text-transform: none;
+}
+.btn-custom-primary:hover {
+    background-color: var(--accent-hover) !important;
+}
+.theme-btn {
+    background-color: var(--bg-alt) !important;
+    color: var(--text-main) !important;
+    margin-top: 14px;
+}
+.chip.bg-pastel-earth {
+    background-color: var(--pastel-badge);
+    font-weight: 600;
+}
+
+/* Footer */
+.custom-footer {
+    background-color: var(--bg-alt);
+    padding-top: 2rem;
+}
+.social-links a {
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+.social-links a:hover {
+    color: var(--accent-color) !important;
+}
