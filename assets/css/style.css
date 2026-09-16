@@ -1,0 +1,141 @@
+/* Importando uma fonte moderna e limpa */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+
+:root {
+    /* Paleta Terrosa e Pastel - Tema Claro */
+    --bg-main: #FAF7F2;
+    --bg-alt: #F1EBE1;
+    --text-main: #4A3F35;
+    --text-muted: #7A6F65;
+    --accent-color: #D4A373;
+    --accent-hover: #b88656;
+    --card-bg: #FFFFFF;
+    --pastel-badge: #E9EDC9;
+}
+
+[data-bs-theme="dark"] {
+    /* Paleta Terrosa e Pastel - Tema Escuro */
+    --bg-main: #2D2824;
+    --bg-alt: #38322D;
+    --text-main: #FDFBF7;
+    --text-muted: #D1C7BD;
+    --accent-color: #D4A373;
+    --accent-hover: #E3B992;
+    --card-bg: #3E3731;
+    --pastel-badge: #5A5348;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Navbar Customizada */
+.custom-navbar {
+    background-color: var(--bg-main);
+    border-bottom: 2px solid var(--bg-alt);
+    transition: background-color 0.3s ease;
+}
+
+.custom-navbar .navbar-brand, 
+.custom-navbar .nav-link {
+    color: var(--text-main) !important;
+    font-weight: 600;
+}
+
+.custom-navbar .nav-link:hover {
+    color: var(--accent-color) !important;
+}
+
+/* Utilitários Visuais */
+.text-accent {
+    color: var(--accent-color);
+}
+
+.bg-section-alt {
+    background-color: var(--bg-alt);
+}
+
+.custom-card {
+    background-color: var(--card-bg);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.custom-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--bg-alt);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05) !important;
+}
+
+/* Badges e Botões */
+.bg-pastel-earth {
+    background-color: var(--pastel-badge);
+    color: var(--text-main);
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 20px;
+}
+
+.btn-custom-primary {
+    background-color: var(--accent-color);
+    color: #fff;
+    font-weight: 700;
+    border: none;
+}
+
+.btn-custom-primary:hover {
+    background-color: var(--accent-hover);
+    color: #fff;
+}
+
+.btn-outline-custom {
+    border: 2px solid var(--accent-color);
+    color: var(--accent-color);
+    font-weight: 700;
+}
+
+.btn-outline-custom:hover {
+    background-color: var(--accent-color);
+    color: #fff;
+}
+
+.btn-theme-toggle {
+    background-color: var(--bg-alt);
+    color: var(--text-main);
+    border: none;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-theme-toggle:hover {
+    background-color: var(--pastel-badge);
+}
+
+/* Imagem e Footer */
+.profile-img {
+    border: 5px solid var(--accent-color);
+}
+
+footer {
+    background-color: var(--bg-alt);
+}
+
+.social-icon {
+    color: var(--text-main);
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: var(--accent-color);
+}
+
+/* Ajustes gerais de texto para legibilidade */
+p {
+    color: var(--text-muted);
+}
