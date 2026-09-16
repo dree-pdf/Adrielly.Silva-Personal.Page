@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio | Materialize CSS</title>
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Google Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- CSS Customizado -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="light-theme">
+
+    <!-- Navbar -->
+    <div class="navbar-fixed">
+        <nav class="custom-navbar z-depth-1">
+            <div class="nav-wrapper container">
+                <a href="#" class="brand-logo fw-bold text-main">Portfólio.</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger text-main"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down d-flex align-items-center">
+                    <li><a href="#sobre" class="text-main">Sobre Mim</a></li>
+                    <li><a href="#habilidades" class="text-main">Habilidades</a></li>
+                    <li><a href="#projetos" class="text-main">Projetos</a></li>
+                    <li>
+                        <!-- Botão de Tema -->
+                        <a href="#!" id="theme-toggle" class="btn-floating btn-small waves-effect waves-light theme-btn z-depth-1">
+                            <i class="material-icons" id="theme-icon">brightness_2</i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Menu Mobile (Sidenav) -->
+    <ul class="sidenav custom-sidenav" id="mobile-demo">
+        <li><a href="#sobre" class="text-main">Sobre Mim</a></li>
+        <li><a href="#habilidades" class="text-main">Habilidades</a></li>
+        <li><a href="#projetos" class="text-main">Projetos</a></li>
+        <li>
+            <a href="#!" id="theme-toggle-mobile" class="text-main">
+                <i class="material-icons left" id="theme-icon-mobile">brightness_2</i> Alternar Tema
+            </a>
+        </li>
+    </ul>
+
+    <!-- Hero Section -->
+    <section class="section center-align hero-section">
+        <div class="container">
+            <img src="https://ui-avatars.com/api/?name=S+N&background=d4a373&color=fff&size=150" alt="Sua Foto" class="circle responsive-img z-depth-2 mb-4 profile-img">
+            <h2 class="fw-bold text-main">Olá, eu sou [Seu Nome]</h2>
+            <p class="flow-text text-muted">Estudante de Tecnologia, entusiasta de Engenharia de Software e Gestão de TI.</p>
+            <a href="#projetos" class="btn-large waves-effect waves-light btn-custom-primary rounded-pill mt-3">Ver Projetos</a>
+        </div>
+    </section>
+
+    <!-- Sobre Mim -->
+    <section id="sobre" class="section bg-section-alt">
+        <div class="container">
+            <h3 class="center-align fw-bold text-main section-title">Sobre Mim</h3>
+            <div class="row valign-wrapper flex-wrap">
+                <div class="col s12 m6 center-align">
+                    <div class="card-panel custom-card z-depth-2 rounded-4">
+                        <i class="material-icons text-accent" style="font-size: 5rem;">computer</i>
+                    </div>
+                </div>
+                <div class="col s12 m6">
+                    <p class="text-muted text-justify">
+                        Sou estudante da área de tecnologia, focado em disciplinas como Engenharia de Software, Sistemas Gerenciadores de Bancos de Dados e Gestão de TI.
+                    </p>
+                    <p class="text-muted text-justify">
+                        Profissionalmente, atuo na área técnica prestando suporte em auditoria de sistemas e conciliação financeira de adquirentes de pagamento. Gosto de resolver problemas complexos e garantir que as liquidações e dados estejam sempre precisos. Também tenho grande interesse em evolução na área de Produto (PO) e mercado financeiro.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projetos" class="section">
+        <div class="container">
+            <h3 class="center-align fw-bold text-main section-title">Meus Projetos</h3>
+            <div class="row">
+                <!-- Projeto 1 -->
+                <div class="col s12 m6">
+                    <div class="card custom-card rounded-4 z-depth-1 hoverable">
+                        <div class="card-content">
+                            <span class="card-title fw-bold text-accent">App de Finanças Pessoais</span>
+                            <p class="text-muted mt-2">Sistema focado no gerenciamento de finanças, criado para auxiliar no controle de gastos, receitas e metas orçamentárias.</p>
+                        </div>
+                        <div class="card-action border-0">
+                            <div class="chip bg-pastel-earth text-main">Engenharia de Software</div>
+                            <div class="chip bg-pastel-earth text-main">Desenvolvimento</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Projeto 2 -->
+                <div class="col s12 m6">
+                    <div class="card custom-card rounded-4 z-depth-1 hoverable">
+                        <div class="card-content">
+                            <span class="card-title fw-bold text-accent">Sistema Agência de Viagens</span>
+                            <p class="text-muted mt-2">Plataforma desenvolvida seguindo os padrões do SWEBOK para gerenciar excursões de ônibus, reservas e roteiros de viagens.</p>
+                        </div>
+                        <div class="card-action border-0">
+                            <div class="chip bg-pastel-earth text-main">SWEBOK</div>
+                            <div class="chip bg-pastel-earth text-main">Arquitetura</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="page-footer custom-footer">
+        <div class="container center-align">
+            <h5 class="text-main fw-bold">Vamos conversar?</h5>
+            <div class="social-links mt-3">
+                <a href="#" class="text-main"><i class="material-icons medium">link</i></a>
+                <a href="#" class="text-main"><i class="material-icons medium">code</i></a>
+                <a href="#" class="text-main"><i class="material-icons medium">email</i></a>
+            </div>
+            <p class="text-muted small mt-3 pb-3">© 2026 Desenvolvido para a disciplina GAC116 - Programação Web.</p>
+        </div>
+    </footer>
+
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Script Customizado -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
